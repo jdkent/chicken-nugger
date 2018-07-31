@@ -5,14 +5,14 @@ from ..refraction import snell
 def test_one_plus_one_is_two():
     "Check that one and one are indeed two."
     assert 1 + 1 == 2
-   
+
 
 def test_perpendicular(): 
     actual = snell(0, 2.0, 3.0)
     expected = 0
     assert actual == expected
-    
-    
+
+
 def test_air_water():
     n_air = 1
     n_water = 1.33
